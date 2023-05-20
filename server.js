@@ -7,8 +7,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get("/api/hello", (req, res) => {
-  res.send("Hello from the server!");
+app.get("/api/hello/:kk", (req, res) => {
+  console.log(req.params);
+  console.log(req.query);
+  res.status(200).send("Hello from the server!");
 });
 
 app.post("/api/login", (req, res) => {

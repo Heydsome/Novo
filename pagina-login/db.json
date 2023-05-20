@@ -1,0 +1,20 @@
+{
+  "Accounts": [
+    {
+      "id": 1,
+      "username": "Heyder Almeida",
+      "password": "typicode"
+    },
+    {
+      "id": 2,
+      "username": "json-server",
+      "password": "typicode"
+    },
+    {
+      "id": 3,
+      "username": "json-server",
+      "password": "typicode"
+    }
+  ]
+ 
+}
