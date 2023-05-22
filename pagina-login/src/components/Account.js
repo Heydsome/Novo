@@ -1,23 +1,25 @@
-import { useState } from "react";
-
-const Account = ({account}) => {
+import { useState} from "react";
+import { TbTrash } from "react-icons/tb";
+const Account = ({account, onDelete}) => {
   const [showLogin, setShowLogin]= useState(false);
-  
+
+
+
   const handleClick=()=>{
     setShowLogin(!showLogin)
   };
 
+
+
   return (
     
-    <div className ='Account' onClick = {handleClick}>
-      
-    
+    <div className ='Account'  onClick = {handleClick}>
+
       <h4>{account.username}</h4>
-      
-      {showLogin&&
-        <form>
+          {showLogin&&
+        <form >
           <label>Password</label>
-          <input type = 'password'/>
+          <input type = 'password' />
         </form>}
     </div>
     

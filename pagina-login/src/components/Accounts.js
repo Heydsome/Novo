@@ -1,6 +1,6 @@
 import Account from './Account'
 
-const Accounts = ({accounts}) => {
+const Accounts = ({accounts,onDelete}) => {
  
   return (
    <>
@@ -10,7 +10,7 @@ const Accounts = ({accounts}) => {
     </header>   
     {accounts.map((account) => (
       
-      <Account key={account.id} account ={account} ></Account>
+      <Account key={account.id} account ={account} onDelete={onDelete}></Account>
       ))}
       <div className='Account' onClick={()=>{window.location.href ='/Login'}}>
        <h4>Use Another Account</h4>

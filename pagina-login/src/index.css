@@ -47,10 +47,11 @@ body {
 
 
 
-.Account h4 {
-  
-  
+.Account h4 {  
   margin-left: 10px;
+}
+.Account form {  
+  font-size: small;
 }
 
 .Account:hover{

@@ -106,7 +106,7 @@ const App = () => {
 
             <Route path = '/Accounts' element= {(
               <>
-                  <Accounts accounts={accounts}/>
+                  <Accounts accounts={accounts} onDelete={deleteAccount}/>
               </>
             )
             }>

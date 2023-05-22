@@ -9,6 +9,7 @@ const Login = () => {
             
       </header>
       <h5>Welcome back!</h5>
+      <h6>click on an account and insert your password to login</h6>
       <form className = 'add-form'>
         <div className='form-control'>
             <label>Username</label>
